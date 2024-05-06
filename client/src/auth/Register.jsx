@@ -39,6 +39,7 @@ export default function Register() {
             Email Address
           </label>
           <input
+            spellCheck="false"
             value={inputs.email}
             onChange={handleChange("email")}
             type="email"
@@ -53,6 +54,7 @@ export default function Register() {
             Password
           </label>
           <input
+            spellCheck="false"
             value={inputs.password}
             onChange={handleChange("password")}
             type="text"
