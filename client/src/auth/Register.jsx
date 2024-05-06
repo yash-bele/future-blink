@@ -44,7 +44,7 @@ export default function Register() {
             onChange={handleChange("email")}
             type="email"
             id="email"
-            className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             placeholder="your@email.com"
             required
           />
@@ -59,29 +59,29 @@ export default function Register() {
             onChange={handleChange("password")}
             type="text"
             id="password"
-            className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             placeholder="Enter your password"
             required
           />
-          <a href="" className="text-xs text-gray-600 hover:text-indigo-500">
+          <a href="" className="text-xs text-gray-600 hover:text-blue-500">
             Forgot Password?
           </a>
         </div>
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center">
-            <input type="checkbox" id="remember" className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none" defaultChecked />
+            <input type="checkbox" id="remember" className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 focus:outline-none" defaultChecked />
             <label htmlFor="remember" className="ml-2 block text-sm text-gray-700">
               Remember me
             </label>
           </div>
-          <Link to="/" className="text-sm font-semibold text-indigo-500 hover:text-indigo-700">
+          <Link to="/" className="text-sm font-semibold text-blue-500 hover:text-blue-700">
             Login
           </Link>
         </div>
         <button
           type="submit"
           disabled={isLoading}
-          className={`disabled:cursor-not-allowed w-full flex justify-center items-center h-10 border border-transparent rounded-md text-lg shadow-sm font-medium text-white ${isLoading ? "bg-indigo-300" : "bg-indigo-500 hover:bg-indigo-600"}`}
+          className={`disabled:cursor-not-allowed w-full flex justify-center items-center h-10 border border-transparent rounded-md text-lg shadow-sm font-medium text-white ${isLoading ? "bg-blue-300" : "bg-blue-500 hover:bg-blue-600"}`}
         >
           {isLoading ? <Icon icon="icomoon-free:spinner9" width={24} className="animate-spin" /> : "Register"}
         </button>
