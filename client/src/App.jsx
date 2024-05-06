@@ -41,7 +41,7 @@ function Flow() {
     <main className="w-screen h-screen">
       {fetchLoading ? (
         <div className="w-screen h-screen grid place-items-center">
-          <Icon icon="ei:spinner" width={250} className="animate-spin text-blue-100" />
+          <Icon icon="ei:spinner" width={250} className="animate-spin text-blue-200" />
         </div>
       ) : (
         <>
