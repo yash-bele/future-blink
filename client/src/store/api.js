@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const api = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:5000",
+    baseUrl: "https://future-blink-api.vercel.app",
     prepareHeaders: (headers, { getState }) => {
       const token = getState().app.token || localStorage.getItem("token");
       headers.set("Authorization", `Bearer ${token}`);
